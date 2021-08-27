@@ -7,7 +7,8 @@ Requirements
 - Need docker to run Zammad
 
 
-Files organisation :
+Files organisation
+===
 ```
 	front/    is for Symfony part of app
 	zammad/	  is for Zammad ticketing system of app
