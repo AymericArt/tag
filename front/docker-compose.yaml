@@ -8,9 +8,36 @@ services:
             MYSQL_DATABASE: tag
             MYSQL_USER: tag
             MYSQL_PASSWORD: tag
+        volumes:
+            - ./database:/var/lib/mysql
+
         ports:
             # To allow the host machine to access the ports below, modify the lines below.
             # For example, to allow the host to connect to port 3306 on the container, you would change
             # "3306" to "3306:3306". Where the first port is exposed to the host and the second is the container port.
             # See https://docs.docker.com/compose/compose-file/#ports for more information.
             - '3306'
+    # main:
+    #     image: HERE IMAGE VERSION PHP
+    #     container_name: somecontainer
+    #     tty: true
+    #     links:
+    #         - database
+    #     volumes_from:
+    #         - app
+
+    # app:
+    #     image:HERE IMAGE APACHE
+    #     tty: true
+    #     container_name: somecontainer2
+    #     links:
+    #         - database
+    #     environment:
+    #         VIRTUAL_HOST: "www.toto.rf"
+    #         LETSENCRYPT_HOST: "www.toto.rf"
+    #         LETSENCRYPT_EMAIL: "toto@gmail.com"
+    #         USERID: 1000
+    #     working_dir: /var/www/html
+    #     volumes:
+    #         - ./front:/var/www/html
+
