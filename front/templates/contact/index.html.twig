@@ -10,51 +10,21 @@
                 <h3 class="section-subheading text-muted">Renseignements et demandes d'inscription</h3>
             </div>
 
-            <form id="contactForm">
-                <div class="row align-items-stretch mb-5">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <!-- Name input-->
-                            <input class="form-control" id="name" type="text" placeholder="Votre nom *" />
-                            <div class="invalid-feedback">Un nom est requis.</div>
-                        </div>
-                        <div class="form-group">
-                            <!-- Email address input-->
-                            <input class="form-control" id="email" type="email" placeholder="Votre Email *" />
-                            <div class="invalid-feedback">Un email est requis.</div>
-                        </div>
-                        <div class="form-group mb-md-0">
-                            <!-- Phone number input-->
-                            <input class="form-control" id="phone" type="tel" placeholder="Votre Téléphone *" />
-                            <div class="invalid-feedback">Un numéro de téléphone est requis.</div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group form-group-textarea mb-md-0">
-                            <!-- Message input-->
-                            <textarea class="form-control" id="message" placeholder="Votre Message *" ></textarea>
-                            <div class="invalid-feedback" >Un message est requis.</div>
-                        </div>
-                    </div>
-                </div>
+            <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+            <div id="feedback-form">form will be placed in here</div>
 
-                <div class="d-none" id="submitSuccessMessage">
-                    <div class="text-center text-white mb-3">
-                        <div class="fw-bolder">Form submission successful!</div>
-                        To activate this form, sign up at
-                        <br />
-                    </div>
-                </div>
+            <script id="zammad_form_script" src="https://support.aymeric.tech/assets/form/form.js"></script>
 
-                <div class="text-muted">
-                    En cliquant sur Envoyer, vous acceptez notre <a href="{{ path('conditions') }}">politique d'utilisation</a> ainsi que notre <a href="{{ path('confidentialite') }}">politique de confidentialité</a>
-                </div>
-
-                <div class="text-center">
-                    <button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Send Message</button>
-                </div>
-
-            </form>
+            <script>
+                $(function() {
+                    $('#feedback-form').ZammadForm({
+                        messageTitle: 'Formulaire de Commentaire',
+                        messageSubmit: 'Envoyer',
+                        messageThankYou: 'Merci pour votre requête  (#%s) ! Nous vous recontacterons dans les meilleurs délais.',
+                        noCSS: true
+                    });
+                });
+            </script>
         </div>
     </section>
 {% endblock %}
