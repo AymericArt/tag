@@ -1,4 +1,20 @@
 window.addEventListener('DOMContentLoaded', event => {
+    addRgpdDiv();
+    transformPlaceholder();
+
+});
+
+
+let transformPlaceholder = () => {
+    let allDiv = document.getElementsByClassName('form-group');
+
+
+    allDiv[0].children.item(1).placeholder = "Votre nom";
+    allDiv[1].children.item(1).placeholder = "Votre email";
+    allDiv[2].children.item(1).placeholder = "Votre message";
+}
+
+let addRgpdDiv = () => {
     const elem = document.createElement('div');
 
     elem.className = "text-muted politique"
@@ -6,4 +22,4 @@ window.addEventListener('DOMContentLoaded', event => {
 
     const target = document.querySelector('.btn');
     target.parentNode.insertBefore(elem, target);
-});
+}
