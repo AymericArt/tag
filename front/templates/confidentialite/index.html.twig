@@ -3,8 +3,6 @@
 {% block title %}TAG{% endblock %}
 
 {% block body %}
-{{ include('nav.html.twig') }}
-
 <!-- Masthead-->
 <header class="masthead">
     <div class="container">
@@ -12,7 +10,24 @@
     </div>
 </header>
 
-<div style="text-align: center;">Ici, RGPD</div>
+<section class="page-section" id="services">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">  
+              <p> Tekniske Agentur Grønland s'engage à ce que les traitements de données personnelles effectués sur les sites internet https://tag.aymeric.tech/ et https://support.aymeric.tech/ soient conformes au règlement général sur la protection des données (RGPD) et à la loi Informatique et Libertés. 
+                  De manière générale, vous n’êtes pas tenu de nous communiquer vos données personnelles lorsque vous visitez notre site Internet.
+                Cependant, ce principe comporte certaines exceptions. En effet, pour certains services proposés par notre site, notamment la demande d'adhésion, vous pouvez être amenés à nous communiquer
+                 certaines données telles que : votre nom, votre adresse électronique, et votre numéro de téléphone. Tel est le cas
+                  lorsque vous remplissez le formulaire qui vous est proposé en ligne, dans la rubrique « contact ». Dans tous les cas, vous pouvez refuser de fournir vos 
+                  données personnelles. Dans ce cas, vous ne pourrez pas utiliser les services du site.</p>
+              
+                 <p>En créant un compte sur https://support.aymeric.tech/, vous donnez par la même occasion votre consentement à ce que certaines de vos données (nom, email et prénom) soient
+                     stokées dans nos bases de données. Pour toute information sur celles-ci, ou pour exercer votre droit de rectification, vous pouvez nous contacter à contact@aymeric.tech </p>
+                     <p>Conformément à la réglementation en vigueur et au Réglement Général de Protection des Données, nous nous engageons à ne conserver ces données uniquement dans la stricte limite fixée par 
 
-{{ include('footer.html.twig') }}
+                     </p>
+                <p>TEKNISKE AGENTUR GRONLAND NE PARTAGE À AUCUN MOMENT LES INFORMATIONS QUI LUI SONT TRANSMISES À DES TIERS</p> </div>
+    </div>
+</div>
+
 {% endblock %}
