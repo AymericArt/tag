@@ -11402,6 +11402,7 @@ header.masthead {
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
+    filter: brightness(0.9);
 }
 header.masthead .masthead-subheading {
     font-size: 1.5rem;
@@ -11428,96 +11429,18 @@ header.masthead .masthead-heading {
         font-style: italic;
         line-height: 2.25rem;
         margin-bottom: 2rem;
+        font-size: 48px;
+        font-family: emoji;
+        font-style: normal;
+        font-weight: 700;
     }
     header.masthead .masthead-heading {
         font-size: 4.5rem;
         font-weight: 700;
         line-height: 4.5rem;
         margin-bottom: 4rem;
+        
     }
-}
-#portfolio .portfolio-item {
-    max-width: 26rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-#portfolio .portfolio-item .portfolio-link {
-    position: relative;
-    display: block;
-    margin: 0 auto;
-}
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
-    display: flex;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 200, 0, 0.9);
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity ease-in-out 0.25s;
-}
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
-    font-size: 1.25rem;
-    color: white;
-}
-#portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
-    opacity: 1;
-}
-#portfolio .portfolio-item .portfolio-caption {
-    padding: 1.5rem;
-    text-align: center;
-    background-color: #fff;
-}
-#portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
-    font-size: 1.5rem;
-    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-weight: 700;
-    margin-bottom: 0;
-}
-#portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
-    font-style: italic;
-    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-.portfolio-modal .modal-dialog {
-    margin: 1rem;
-    max-width: 100vw;
-}
-.portfolio-modal .modal-content {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    text-align: center;
-}
-.portfolio-modal .modal-content h2, .portfolio-modal .modal-content .h2 {
-    font-size: 3rem;
-    line-height: 3rem;
-}
-.portfolio-modal .modal-content p.item-intro {
-    font-style: italic;
-    margin-bottom: 2rem;
-    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-.portfolio-modal .modal-content p {
-    margin-bottom: 2rem;
-}
-.portfolio-modal .modal-content ul.list-inline {
-    margin-bottom: 2rem;
-}
-.portfolio-modal .modal-content img {
-    margin-bottom: 2rem;
-}
-.portfolio-modal .close-modal {
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-    width: 3rem;
-    height: 3rem;
-    cursor: pointer;
-    background-color: transparent;
-}
-.portfolio-modal .close-modal:hover {
-    opacity: 0.3;
 }
 
 .timeline {
@@ -11763,4 +11686,127 @@ section#contact form#contactForm :-ms-input-placeholder {
     text-align: center;
     font-size: 0.9rem;
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+
+/// FAQ \\\\
+.accordion_one .panel-group {
+    // border: 1px solid #f1f1f1;
+    margin-top: 100px;
+    padding-bottom: 2rem;
+}
+
+a:link {
+    text-decoration: none
+}
+
+.accordion_one .panel {
+    background-color: transparent;
+    box-shadow: none;
+    border-bottom: 0px solid transparent;
+    border-radius: 0;
+    margin: 0
+}
+
+.accordion_one .panel-default {
+    border: 0
+}
+
+.accordion-wrap .panel-heading {
+    padding: 0px;
+    border-radius: 0px
+}
+
+h4 {
+    font-size: 18px;
+    line-height: 24px
+}
+
+.accordion_one .panel .panel-heading a.collapsed {
+    color: #999999;
+    display: block;
+    padding: 12px 30px;
+    border-top: 0px
+}
+
+.accordion_one .panel .panel-heading a {
+    display: block;
+    padding: 12px 30px;
+    background: #fff;
+    color: #313131;
+    border-bottom: 1px solid #f1f1f1
+}
+
+.accordion-wrap .panel .panel-heading a {
+    font-size: 14px
+}
+
+.accordion_one .panel-group .panel-heading+.panel-collapse>.panel-body {
+    border-top: 0;
+    padding-top: 0;
+    padding: 25px 30px 30px 35px;
+    background: #fff;
+    color: #999999;
+}
+
+.img-accordion {
+    width: 81px;
+    float: left;
+    margin-right: 15px;
+    display: block
+}
+
+.accordion_one .panel .panel-heading a.collapsed:after {
+    content: "\2b";
+    color: #999999;
+    background: #f1f1f1
+}
+
+.accordion_one .panel .panel-heading a:after,
+.accordion_one .panel .panel-heading a.collapsed:after {
+    font-family: 'FontAwesome';
+    font-size: 15px;
+    width: 36px;
+    line-height: 48px;
+    text-align: center;
+    background: #F1F1F1;
+    float: left;
+    margin-left: -31px;
+    margin-top: -12px;
+    margin-right: 15px
+}
+
+.accordion_one .panel .panel-heading a:after {
+    content: "\2212"
+}
+
+.accordion_one .panel .panel-heading a:after,
+.accordion_one .panel .panel-heading a.collapsed:after {
+    font-family: 'FontAwesome';
+    font-size: 15px;
+    width: 36px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    background: #F1F1F1;
+    float: left;
+    margin-left: -31px;
+    margin-top: -12px;
+    margin-right: 15px
+}
+
+.services{
+    flex: 0 0 auto;
+    flex-direction: column;
+    display: flex;
+    width: 33.33333333%;
+    justify-content: start;
+    align-items: center;
+}
+li{
+    list-style-type: none;
+}
+.collapse.show{
+    padding-bottom: 1rem;
 }
