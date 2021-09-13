@@ -3,193 +3,189 @@
 {% block title %}TAG{% endblock %}
 
 {% block body %}
-        {{ include('nav.html.twig') }}
-      
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container">
-                <div class="masthead-subheading">Velkommen !</div>
-                <!-- <div class="masthead-heading text-uppercase">It's Nice To Meet You</div> -->
-                {# <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a> #}
+    {{ include('nav.html.twig') }}
+
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container">
+            <div class="masthead-subheading">Velkommen !</div>
+            <!-- <div class="masthead-heading text-uppercase">It's Nice To Meet You</div> -->
+            {# <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a> #}
+        </div>
+    </header>
+    <!-- Services-->
+    <section class="page-section" id="services">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Services et accompagnement juridique</h2>
+                <h3 class="section-subheading text-muted">Tekniske Agentur Grønland</h3>
             </div>
-        </header>
-        <!-- Services-->
-        <section class="page-section" id="services">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Services et accompagnement juridique</h2>
-                    <h3 class="section-subheading text-muted">Tekniske Agentur Grønland</h3>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Aide juridique</h4>
+                    <p class="text-muted">Depuis 1992, TAG propose une aide juridique aux communes du Groenland </p>
                 </div>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Aide juridique</h4>
-                        <p class="text-muted">Depuis 1992, TAG propose une aide juridique aux communes du Groenland </p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Accompagnement personnalisé </h4>
-                        <p class="text-muted">Un conseiller spécialisé traitera votre demande et échangera avec vous, depuis notre plateforme propre</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Securité des données et des messages échangés</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Accompagnement personnalisé </h4>
+                    <p class="text-muted">Un conseiller spécialisé traitera votre demande et échangera avec vous, depuis notre plateforme propre</p>
                 </div>
-            </div>
-        </section>
-     <section class="page-section" id="about">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Historique</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <ul class="timeline">
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{ asset("build/assets/img/about/1.jpg")}}" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>1992</h4>
-                                <h4 class="subheading">Création du TAG</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{ asset("build/assets/img/about/2.jpg") }}" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>Mars 1998</h4>
-                                <h4 class="subheading">25 communes adhérentes</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{ asset("build/assets/img/about/3.jpg") }}" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>Septembre 2021</h4>
-                                <h4 class="subheading">52 communes groenlandaises adhérentes sur les 64 que compte le pays </h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{ asset("build/assets/img/about/4.jpg") }}" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>Juillet 2022 ...</h4>
-                                <h4 class="subheading">Les 64 communes groenlandaises adhérentes au TAG ?</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>
-                                Be Part
-                                <br />
-                                Of Our
-                                <br />
-                                Story!
-                            </h4>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- Team-->
-        <section class="page-section bg-light" id="team">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="{{ asset("build/assets/img/team/1.jpg") }}" alt="..." />
-                            <h4>Aymeric Artero</h4>
-                            <p class="text-muted">Lead Designer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="{{ asset("build/assets/img/team/2.jpg") }}" alt="..." />
-                            <h4>Raphaël Frinot-Gascard</h4>
-                            <p class="text-muted">Lead Marketer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="{{ asset("build/assets/img/team/3.jpg") }}" alt="..." />
-                            <h4>Christopher Roger</h4>
-                            <p class="text-muted">Lead Developer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="{{ asset("build/assets/img/team/bob.jpg") }}" alt="..." />
-                            <h4>Nicolas Senentz</h4>
-                            <p class="text-muted">Lead Developer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Securité des données et des messages échangés</h4>
+                    <p class="text-muted">Vos données personnel et les messages sont cryptées et protégées.</p>
                 </div>
             </div>
-        </section>
-        <!-- Clients-->
-        <div class="py-5">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="https://sisimiutcity.com/"><img class="img-fluid img-brand d-block mx-auto" src="{{ asset("build/assets/img/customers/SisimiutCity.png") }}" alt="Sisimiut City" /></a>
+        </div>
+    </section>
+    <section class="page-section bg-light" id="about">
+        <div class="container ">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Historique</h2>
+                <h3 class="section-subheading text-muted">Le TAG au travers du temps.</h3>
+            </div>
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{ asset("build/assets/img/about/1.jpg")}}" alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>1992</h4>
+                            <h4 class="subheading">Création du TAG</h4>
+                        </div>
+                        <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
                     </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="https://www.iqaluit.ca/"><img class="img-fluid img-brand d-block mx-auto" src="{{ asset("build/assets/img/customers/Iqualuit.png") }}" alt="Iqualuit" /></a>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{ asset("build/assets/img/about/2.jpg") }}" alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>Mars 1998</h4>
+                            <h4 class="subheading">25 communes adhérentes</h4>
+                        </div>
+                        <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
                     </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="http://www.qaasuitsup.gl/"><img class="img-fluid img-brand d-block mx-auto" src="http://www.qaasuitsup.gl/resources/qaasuitsup/images/logo.svg" alt="Illuisat Radhus" /></a>
+                </li>
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{ asset("build/assets/img/about/3.jpg") }}" alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>Septembre 2021</h4>
+                            <h4 class="subheading">52 communes groenlandaises adhérentes sur les 64 que compte le pays </h4>
+                        </div>
+                        <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
                     </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="https://sermersooq.gl/da/"><img class="img-fluid img-brand d-block mx-auto" src="{{ asset("build/assets/img/customers/Sermersooq-Logo.png") }}" alt="Sermersooq" /></a>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{ asset("build/assets/img/about/4.jpg") }}" alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>Juillet 2022 ...</h4>
+                            <h4 class="subheading">Les 64 communes groenlandaises adhérentes au TAG ?</h4>
+                        </div>
+                        <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
                     </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="https://fr.wikipedia.org/wiki/Aasiaat"><img class="img-fluid img-brand d-block mx-auto" src="{{ asset("build/assets/img/customers/Aasiaat-Logo.png") }}" alt="Aasiaat" /></a>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image">
+                        <h4>
+                            Be Part
+                            <br />
+                            Of Our
+                            <br />
+                            Story!
+                        </h4>
                     </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="https://fr.wikipedia.org/wiki/Nuuk"><img class="img-fluid img-brand d-block mx-auto" src="{{ asset("build/assets/img/customers/Nuuk-Logo.png") }}" alt="Nuuk" /></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Team-->
+    <section class="page-section" id="team">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="{{ asset("build/assets/img/team/1.jpg") }}" alt="..." />
+                        <h4>Aymeric Artero</h4>
+                        <p class="text-muted">Lead Designer</p>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
                     </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="https://www.qeqqata.gl/"><img class="img-fluid img-brand d-block mx-auto" src="{{ asset("build/assets/img/customers/Qeqqata-Logo.png") }}" alt="Qeqqata" /></a>
+                </div>
+                <div class="col-lg-3">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="{{ asset("build/assets/img/team/2.jpg") }}" alt="..." />
+                        <h4>Raphaël Frinot-Gascard</h4>
+                        <p class="text-muted">Lead Marketer</p>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="{{ asset("build/assets/img/team/3.jpg") }}" alt="..." />
+                        <h4>Christopher Roger</h4>
+                        <p class="text-muted">Lead Developer</p>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="{{ asset("build/assets/img/team/bob.jpg") }}" alt="..." />
+                        <h4>Nicolas Senentz</h4>
+                        <p class="text-muted">Lead Developer</p>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-        {{ include('footer.html.twig') }}
+    </section>
+    <!-- Clients-->
+    <div class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-3 col-sm-6 my-3">
+                    <a href="https://sisimiutcity.com/"><img class="img-fluid img-brand d-block mx-auto" src="{{ asset("build/assets/img/customers/SisimiutCity.png") }}" alt="Sisimiut City" /></a>
+                </div>
+                <div class="col-md-3 col-sm-6 my-3">
+                    <a href="https://www.iqaluit.ca/"><img class="img-fluid img-brand d-block mx-auto" src="{{ asset("build/assets/img/customers/Iqualuit.png") }}" alt="Iqualuit" /></a>
+                </div>
+                <div class="col-md-3 col-sm-6 my-3">
+                    <a href="http://www.qaasuitsup.gl/"><img class="img-fluid img-brand d-block mx-auto" src="http://www.qaasuitsup.gl/resources/qaasuitsup/images/logo.svg" alt="Illuisat Radhus" /></a>
+                </div>
+                <div class="col-md-3 col-sm-6 my-3">
+                    <a href="https://sermersooq.gl/da/"><img class="img-fluid img-brand d-block mx-auto" src="{{ asset("build/assets/img/customers/Sermersooq-Logo.png") }}" alt="Sermersooq" /></a>
+                </div>
+                <div class="col-md-3 col-sm-6 my-3">
+                    <a href="https://fr.wikipedia.org/wiki/Aasiaat"><img class="img-fluid img-brand d-block mx-auto" src="{{ asset("build/assets/img/customers/Aasiat-Logo.png") }}" alt="Aasiaat" /></a>
+                </div>
+                <div class="col-md-3 col-sm-6 my-3">
+                    <a href="https://fr.wikipedia.org/wiki/Nuuk"><img class="img-fluid img-brand d-block mx-auto" src="{{ asset("build/assets/img/customers/Nuuk-Logo.png") }}" alt="Nuuk" /></a>
+                </div>
+                <div class="col-md-3 col-sm-6 my-3">
+                    <a href="https://www.qeqqata.gl/"><img class="img-fluid img-brand d-block mx-auto" src="{{ asset("build/assets/img/customers/Qeqqata-Logo.png") }}" alt="Qeqqata" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{ include('footer.html.twig') }}
 {% endblock %}
